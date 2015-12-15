@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2C81C71C1F4D90008D771D /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C81C61C1F4D90008D771D /* Minecraft.ttf */; };
+		2E2C81C91C1F5277008D771D /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C81C81C1F5277008D771D /* btn.wav */; };
 		2E429FFF1C1F300B009C59B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E429FFE1C1F300B009C59B7 /* AppDelegate.swift */; };
 		2E42A0011C1F300B009C59B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42A0001C1F300B009C59B7 /* ViewController.swift */; };
 		2E42A0041C1F300B009C59B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E42A0021C1F300B009C59B7 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E2C81C61C1F4D90008D771D /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Minecraft.ttf; path = ../Minecraft.ttf; sourceTree = "<group>"; };
+		2E2C81C81C1F5277008D771D /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 		2E429FFB1C1F300B009C59B7 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E429FFE1C1F300B009C59B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E42A0001C1F300B009C59B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 		2E429FFD1C1F300B009C59B7 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C81C61C1F4D90008D771D /* Minecraft.ttf */,
+				2E2C81C81C1F5277008D771D /* btn.wav */,
 				2E429FFE1C1F300B009C59B7 /* AppDelegate.swift */,
 				2E42A0001C1F300B009C59B7 /* ViewController.swift */,
 				2E42A0021C1F300B009C59B7 /* Main.storyboard */,
@@ -232,8 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2C81C91C1F5277008D771D /* btn.wav in Resources */,
 				2E42A0091C1F300B009C59B7 /* LaunchScreen.storyboard in Resources */,
 				2E42A0061C1F300B009C59B7 /* Assets.xcassets in Resources */,
+				2E2C81C71C1F4D90008D771D /* Minecraft.ttf in Resources */,
 				2E42A0041C1F300B009C59B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,10 +408,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.nathanboosinger.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -411,10 +423,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.nathanboosinger.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -485,6 +501,7 @@
 				2E42A0251C1F300B009C59B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E42A0261C1F300B009C59B7 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +510,7 @@
 				2E42A0281C1F300B009C59B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E42A0291C1F300B009C59B7 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +519,7 @@
 				2E42A02B1C1F300B009C59B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
