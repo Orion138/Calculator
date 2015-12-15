@@ -23,11 +23,11 @@ class ViewController: UIViewController {
     
     var btnSound: AVAudioPlayer!
     
-    var runningNumber = ""
-    var leftValStr = ""
-    var rightValStr = ""
-    var currentOperation: Operation = Operation.Empty
-    var result = ""
+        var runningNumber = ""
+        var leftValStr = ""
+        var rightValStr = ""
+        var currentOperation: Operation = Operation.Empty
+        var result = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +68,10 @@ class ViewController: UIViewController {
     
     @IBAction func onEqualPressed(sender: UIButton) {
         processOperation(currentOperation)
+    }
+    
+    @IBAction func onClearPressed(sender: UIButton) {
+        clearAll()
     }
     
     func processOperation(op: Operation) {
@@ -112,6 +116,17 @@ class ViewController: UIViewController {
         }
         
         btnSound.play()
+    }
+    
+    func clearAll() {
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        currentOperation = Operation.Empty
+        result = ""
+        outputLbl.text = "0"
+        
+        playSound()
     }
 }
 
