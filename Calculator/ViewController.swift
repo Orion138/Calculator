@@ -77,7 +77,7 @@ class ViewController: UIViewController {
     func processOperation(op: Operation) {
         playSound()
         
-        if currentOperation != Operation.Empty {
+        if currentOperation != Operation.Empty && leftValStr != "" {
             // Run some math
             
             // A user selected an operator, but then selected another operator without
